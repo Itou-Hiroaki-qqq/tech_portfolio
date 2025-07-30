@@ -5,28 +5,44 @@
   <meta name="description" content="伊藤寛晃のポートフォリオサイトです">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ITO HIROAKI Portforio</title>
+
+  <!-- js -->
+  <script src="assets/js/main.js" defer></script>
+
+  <!-- web fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="wrapper">
-    <h1>
-      <a href="#">
-        <img src="assets/img/logo.svg" alt="サイトのロゴ">
-      </a>
-    </h1>
-    <nav class="nav">
-      <ul class="nav_list">
-        <li class="nav_item"><a href="#services">Services</a></li>
-        <li class="nav_item"><a href="#skills">Skills</a></li>
-        <li class="nav_item"><a href="#works">Works</a></li>
-        <li class="nav_item"><a href="#about">About</a></li>
-        <li class="nav_item"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- hamburger -->
-    <div class="hamburger">
-      <div class="hamburger_bar"></div>
-      <div class="hamburger_bar"></div>
-      <div class="hamburger_bar"></div>
+  <header>
+    <div class="wrapper">
+      <div class="header_group">
+        <h1>
+          <a href="#">
+            <img src="assets/img/logo.svg" alt="サイトのロゴ">
+          </a>
+        </h1>
+        <!-- hamburger -->
+        <div class="hamburger">
+          <div class="hamburger_bar"></div>
+          <div class="hamburger_bar"></div>
+          <div class="hamburger_bar"></div>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="nav_item"><a class="manrope" href="#services">Services</a></li>
+          <li class="nav_item"><a class="manrope" href="#skills">Skills</a></li>
+          <li class="nav_item"><a class="manrope" href="#works">Works</a></li>
+          <li class="nav_item"><a class="manrope" href="#about">About</a></li>
+          <li class="nav_item"><a class="manrope" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -41,11 +57,10 @@
               <img src="assets/img/hero_sp.png" alt="ITO HIROAKI Portforio">
           </picture>
         </h2>
-        <div class="hero_title-left">
-          <p>ITO</p>
-          <p>HIROAKI</p>
-        </div>
-        <p class="hero_title-right"></p>
+        <p class="hero_title-left">
+          ITO<br>HIROAKI
+        </p>
+        <p class="hero_title-right manrope">Portfolio</p>
       </div>
 
       <section class="services s-wrapper" id="services">
@@ -115,7 +130,7 @@
         <div class="skills_jenre">
           <h3 class="skills_name">開発言語</h3>
           <ul class="skills_list">
-            <li class="skills_item">
+            <li class="skills_item skills_item--top">
               <div class="skills_item-imgZone">
                 <p class="skills_item-name">HTML</p>
                 <a target="_blank" href="https://icons8.com/icon/20909/html-5">
@@ -171,7 +186,7 @@
         <div class="skills_jenre">
           <h3 class="skills_name">ライブラリー</h3>
           <ul class="skills_list">
-            <li class="skills_item">
+            <li class="skills_item  skills_item--top">
               <div class="skills_item-imgZone">
                 <p class="skills_item-name">jQuery</p>
                 <a target="_blank" href="https://icons8.com/icon/HKNzD81eiiSc/jquery">
@@ -223,7 +238,7 @@
         <div class="skills_jenre">
           <h3 class="skills_name">フレームワーク／CMS</h3>
           <ul class="skills_list">
-            <li class="skills_item">
+            <li class="skills_item  skills_item--top">
               <div class="skills_item-imgZone">
                 <p class="skills_item-name">React / Next.js</p>
                 <a target="_blank" href="https://icons8.com/icon/asWSSTBrDlTW/react">
@@ -279,7 +294,7 @@
         <div class="skills_jenre">
           <h3 class="skills_name">ツール</h3>
           <ul class="skills_list">
-            <li class="skills_item">
+            <li class="skills_item  skills_item--top">
               <div class="skills_item-imgZone">
                 <p class="skills_item-name">Visual Studio Code</p>
                 <a target="_blank" href="https://icons8.com/icon/9OGIyU8hrxW5/visual-studio-code-2019">
@@ -403,7 +418,7 @@
         <div class="skills_jenre">
           <h3 class="skills_name">その他のスキル</h3>
           <ul class="skills_list">
-            <li class="skills_item">
+            <li class="skills_item  skills_item--top">
               <div class="skills_item-imgZone">
                 <p class="skills_item-name">Webライティング</p>
                 <a target="_blank" href="https://icons8.com/icon/8172/pen">
@@ -429,50 +444,62 @@
         <ul class="works_list">
           <li class="works_item">
             <img class="works_img" src="assets/img/works_sugutabe.jpg" alt="">
-            <h3 class="works_topic">野菜宅配サービス</h3>
-            <p class="works_category">LP ｜ スクール課題</p>
-            <p class="works_role">Direction / Design / Coding</p>
-            <p class="works_tool">Figma / Photoshop / Illustrator / HTML / CSS / jQuery</p>
+            <div class="works_txtZone">
+              <h3 class="works_topic">野菜宅配サービス</h3>
+              <p class="works_category">LP ｜ スクール課題</p>
+              <p class="works_role manrope">Direction / Design / Coding</p>
+              <p class="works_tool manrope">Figma / Photoshop / Illustrator / HTML / CSS / jQuery</p>
+            </div>
           </li>
 
           <li class="works_item">
             <img class="works_img" src="assets/img/blank.png" alt="">
-            <h3 class="works_topic">ポートフォリオ</h3>
-            <p class="works_category">Website ｜ 自主制作</p>
-            <p class="works_role">Direction / Design / Coding</p>
-            <p class="works_tool">Figma / Photoshop / Illustrator / HTML / CSS / JavaScript</p>
+            <div class="works_txtZone">
+              <h3 class="works_topic">ポートフォリオ</h3>
+              <p class="works_category">Website ｜ 自主制作</p>
+              <p class="works_role manrope">Direction / Design / Coding</p>
+              <p class="works_tool manrope">Figma / Photoshop / Illustrator / HTML / CSS / JavaScript</p>
+            </div>
           </li>
 
           <li class="works_item">
             <img class="works_img" src="assets/img/works_tech-LP01.jpg" alt="">
-            <h3 class="works_topic">Kira-Kira Juku</h3>
-            <p class="works_category">LP ｜ スクール課題</p>
-            <p class="works_role">Coding</p>
-            <p class="works_tool">HTML / CSS / JavaScript / XD</p>
+            <div class="works_txtZone">
+              <h3 class="works_topic">Kira-Kira Juku</h3>
+              <p class="works_category">LP ｜ スクール課題</p>
+              <p class="works_role manrope">Coding</p>
+              <p class="works_tool manrope">HTML / CSS / JavaScript / XD</p>
+            </div>
           </li>
 
           <li class="works_item">
             <img class="works_img" src="assets/img/works_tech-LP02.jpg" alt="">
-            <h3 class="works_topic">Kirameki Cream</h3>
-            <p class="works_category">LP ｜ スクール課題</p>
-            <p class="works_role">Coding</p>
-            <p class="works_tool">HTML / CSS / JavaScript / swiper / XD</p>
+            <div class="works_txtZone">
+              <h3 class="works_topic">Kirameki Cream</h3>
+              <p class="works_category">LP ｜ スクール課題</p>
+              <p class="works_role manrope">Coding</p>
+              <p class="works_tool manrope">HTML / CSS / JavaScript / swiper / XD</p>
+            </div>
           </li>
 
           <li class="works_item">
             <img class="works_img" src="assets/img/works_tech-LP03.jpg" alt="">
-            <h3 class="works_topic">KIRAMEKI BEAUTY LABO</h3>
-            <p class="works_category">LP ｜ スクール課題</p>
-            <p class="works_role">Coding</p>
-            <p class="works_tool">HTML / CSS / jQuery / Photoshop</p>
+            <div class="works_txtZone">
+              <h3 class="works_topic">KIRAMEKI BEAUTY LABO</h3>
+              <p class="works_category">LP ｜ スクール課題</p>
+              <p class="works_role manrope">Coding</p>
+              <p class="works_tool manrope">HTML / CSS / jQuery / Photoshop</p>
+            </div>
           </li>
 
           <li class="works_item">
             <img class="works_img" src="assets/img/works_tech-website.jpg" alt="">
-            <h3 class="works_topic">Kirameki Farm</h3>
-            <p class="works_category">Website ｜ スクール課題</p>
-            <p class="works_role"> Coding</p>
-            <p class="works_tool">HTML / CSS / JavaScript / swiper / Photoshop</p>
+            <div class="works_txtZone">
+              <h3 class="works_topic">Kirameki Farm</h3>
+              <p class="works_category">Website ｜ スクール課題</p>
+              <p class="works_role manrope"> Coding</p>
+              <p class="works_tool manrope">HTML / CSS / JavaScript / swiper / Photoshop</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -480,7 +507,7 @@
       <section class="about wrapper" id="about">
         <h2 class="section_title">About</h2>
         <div class="about_group">
-          <img src="assets/img/about_picture.jpg" alt="">
+          <img class="about_img" src="assets/img/about_picture.jpg" alt="">
           <div class="about_txtZone">
             <p class="about_name">
               伊藤 寛晃
@@ -494,17 +521,17 @@
         </div>
       </section>
 
-      <div class="contact s-wrapper" id="contact">
+      <div class="contact s-wrapper s-wrapper--contact" id="contact">
         <iframe
           src="https://form.run/embed/@chiteijin--qbw8prK8W7hYfUpCMbCP?embed=direct"
-          width="1000"
+          width="300"
           height="600">
         </iframe>
       </div>
     </article>
   </main>
 
-  <footer class="wrapper">
+  <footer class="wrapper wrapper--footer">
     <div class="footer_group">
       <h2 class="footer_logo">
         <a href="#">
@@ -513,15 +540,15 @@
       </h2>
       <nav class="footer_nav">
         <ul class="footer_nav-list">
-          <li class="footer_nav-item"><a href="#services">Services</a></li>
-          <li class="footer_nav-item"><a href="#skills">Skills</a></li>
-          <li class="footer_nav-item"><a href="#works">Works</a></li>
-          <li class="footer_nav-item"><a href="#about">About</a></li>
+          <li class="footer_nav-item"><a class="manrope" href="#services">Services</a></li>
+          <li class="footer_nav-item"><a class="manrope" href="#skills">Skills</a></li>
+          <li class="footer_nav-item"><a class="manrope" href="#works">Works</a></li>
+          <li class="footer_nav-item"><a class="manrope" href="#about">About</a></li>
         </ul>
       </nav>
     </div>
     <p class="copy">
-      <small>
+      <small class="manrope">
         <span>All Rights Reserved 2025 ©︎ Hiroaki Ito</span>
         <span class="sp-none">　｜　</span>
         <span>

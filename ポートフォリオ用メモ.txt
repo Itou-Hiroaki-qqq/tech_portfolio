@@ -1,16 +1,24 @@
-max-width: 1280px;
-padding: 0 16px;
+    max-width: 1280px;
+    padding: 0 16px;
 
 worksグリッド
 400px 余白40px = 1280px
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    font-family: "Manrope", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 
-font-family: "Manrope", sans-serif;
-font-family: "Noto Sans JP", sans-serif;
+<a target="_blank" href="https://icons8.com/icon/1lPetCK97O0o/time-span">期間</a> アイコン by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+<a target="_blank" href="https://icons8.com/icon/cseATCASNDzw/tools">ツール</a> アイコン by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
 
 
     フォームラン
@@ -65,9 +73,7 @@ font-family: "Noto Sans JP", sans-serif;
     <a target="_blank" href="https://icons8.com/icon/bQCJWquu4950/web">ウェブ</a> アイコン by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 
-<a target="_blank" href="https://icons8.com/icon/1lPetCK97O0o/time-span">期間</a> アイコン by <a target="_blank" href="https://icons8.com">Icons8</a>
 
-<a target="_blank" href="https://icons8.com/icon/cseATCASNDzw/tools">ツール</a> アイコン by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 
 

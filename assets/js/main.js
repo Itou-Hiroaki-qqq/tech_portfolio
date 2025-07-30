@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ドロワーメニュー制御
   const headerGroup = document.querySelector('.header_group');
   const nav = document.querySelector('.nav');
   const hamburger = document.querySelector(('.hamburger'));
